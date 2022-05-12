@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Week11_0706012110008">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignActivity"
             android:exported="false" />
         <activity

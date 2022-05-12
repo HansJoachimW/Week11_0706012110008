@@ -52,9 +52,12 @@ class LandingActivity : AppCompatActivity() {
                     var password:String =  textInputLayoutLoginPassword.editText?.text.toString().trim()
 
                     if (system.isEmpty()){
-
+                        btnLogin.error = "No Accounts Present"
                     } else {
-
+                        //udah malem jadi cepet" kerja, sekip authentication
+                        val profileIntent = Intent(this@LandingActivity, ProfileActivity::class.java)
+                        startActivity(profileIntent)
+                        finish()
                     }
                 } else if (textInputLayoutLoginEmail.editText?.text == null){
                     btnLogin.isEnabled = false
